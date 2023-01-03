@@ -9,7 +9,7 @@
     
     <!-- emplacement pour mettre les balises meta pour les RS og:title og:description etc -->
 
-    <!-- Chargement anticipé de la feuille de style  -->
+    <!-- Chargement de la feuille de style compilé depuis les fichiers scss -->
     <link rel="stylesheet" media="all" href="styles/index.css">
     <!-- titre de la page qui s affiche dans l'onglet du navigateur -->
     <title>NIJI - Test intégrateur Senior</title>
@@ -19,7 +19,7 @@
         <div class="header__navigation">
             <!-- suppression de la balise figure -->
             <!-- manque l attribut href qui redirige vers la home -->
-            <a href="/" title="Mon site" class="header__logo" >
+            <a href="/" title="Mon site" class="header__logo">
                 <img src="images/logo.png" alt="" class="header__image">
             </a>
             <!-- restructuration du menu avec un ul > li*3 -->
@@ -29,131 +29,196 @@
                     <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
                 </ul> 
-            </nav>
+            <!-- </nav> -->
         </div>
-        <div class="header__title">
-            <h1 class="title">Welcome !</h2>
+        <div class="header__hero">
+            <h1 class="main__title">Welcome !</h2>
             <a href="#" class="btn">Click here</a>
         </div>
     </header>
   
-    <main class="content">
-        <section class="about">
-            <h2 class="about__title">WHO WE ARE</h2>
+    <main role="main">
+        <section class="about section--blue-bg">
+            <h2 class="about__title section__title">WHO WE ARE</h2>
             <p class="about__text">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
             </p>
         </section>
-        <section class="article">
-            <img src="images/article-1.jpg" width="100%" height="100%"/>
-            <div class="article-content">
-                <div>
-                    <h3 class="article-title"> Article 1 - January 25</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting, 
-                        remaining essentially unchanged. 
-                    </p>
-                    <span href="#" class="btn">En savoir +</span>
-                </div>
+        <article class="article">
+            <div class="article__img">
+                <picture>
+                    <img src="images/article-1.jpg" alt="chaises en cuir et bois"/>
+                </picture>
             </div>
-        </section>
-        <section class="article imgRight">
-            <div class="article-content">
-                <div>
-                    <h4 class="article-title"> Article 2 - January 20</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting, 
-                        remaining essentially unchanged.
-                    </p>
-                    <a href="#" class="btn">En savoir +</a>
-                </div>
+            <div class="article__content">                
+                <h3 class="article__title"> Article 1 - January 25</h3>
+                <p class="article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, 
+                    remaining essentially unchanged. 
+                </p>
+                <a href="#" class="btn">En savoir +</a>                
             </div>
-            <img src="images/article-2.jpg" width="100%" height="100%"/>
-        </section>
-        <section id="bloc" class="is-dark">
-            <h2 class="bloc-title">WHAT WE DO</h2>
+        </article>
+        <article class="article article--right article--lightbluebg">            
+            <div class="article__img">
+                <picture>
+                    <img src="images/article-2.jpg" alt="chaises en cuir et bois"/>
+                </picture>
+            </div>
+            <div class="article__content">                
+                <h4 class="article__title"> Article 2 - January 20</h4>
+                <p class="article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, 
+                    remaining essentially unchanged.
+                </p>
+                <a href="#" class="btn">En savoir +</a>                                
+            </div>
+        </article>
+        <section class="section__wwd section--dark-bg">            
+            <h2 class="section__title section__title--blue">WHAT WE DO</h2>
             <div class="table">
-                <div class="table-item item">
+                <div class="table-item">
                     <div class="flip-card">
                         <div class="flip-front">
-                            <p>Element 1</p>
+                            <p class="text__front">Element 1</p>
                         </div>
                         <div class="flip-back">
-                            <strong>Lorem Ipsum is simply dummy text </strong>
+                            <p>
+                                <strong>Lorem Ipsum is simply dummy text </strong>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="table-item item">
+                <div class="table-item">
                     <div class="flip-card">
                         <div class="flip-front">
-                            <p>Element 2</p>
+                            <p class="text__front">Element 2</p>
                         </div>
                         <div class="flip-back">
-                            <strong>Lorem Ipsum is simply dummy text </strong>
+                            <p>
+                                <strong>Lorem Ipsum is simply dummy text </strong>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="table-item item">
+                <div class="table-item">
                     <div class="flip-card">
                         <div class="flip-front">
-                            <p>Element 3</p>
+                            <p class="text__front">Element 3</p>
                         </div>
                         <div class="flip-back">
-                            <strong>Lorem Ipsum is simply dummy text </strong>
+                            <p>
+                                <strong>Lorem Ipsum is simply dummy text </strong>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="table-item item">
+                <div class="table-item">
                     <div class="flip-card">
                         <div class="flip-front">
-                            <p>Element 4</p>
+                            <p class="text__front">Element 4</p>
                         </div>
                         <div class="flip-back">
-                            <strong>Lorem Ipsum is simply dummy text </strong>
+                            <p>
+                                <strong>Lorem Ipsum is simply dummy text </strong>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="table-item item">
+                <div class="table-item">
                     <div class="flip-card">
                         <div class="flip-front">
-                            <p>Element 5</p>
+                            <p class="text__front">Element 5</p>
                         </div>
-                        <div class="flip-bak">
-                            <strong>Lorem Ipsum is simply dummy text </strong>
+                        <div class="flip-back">
+                            <p>
+                                <strong>Lorem Ipsum is simply dummy text </strong>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="table-item item">
+                <div class="table-item">
                     <div class="flip-card">
                         <div class="flip-front">
-                            <p>Element 6</p>
+                            <p class="text__front">Element 6</p>
                         </div>
                         <div class="flip-back">
-                            <strong>Lorem Ipsum is simply dummy text </strong>
+                            <p>
+                                <strong>Lorem Ipsum is simply dummy text </strong>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="bloc">
-            <div class="bloc-inner">
-                <h1 class="bloc-title">CONTACT US</h1>
-                <div class="form">
+        <section class="section__our__team section--light-bg">
+            <h2 class="section__title section__title--dark-blue">OUR TEAM</h2>
+            <ul class="card__employees">
+                <li class="card__employee">
+                     <picture class="card__img">
+                        <img src="./images/team-1.jpg" class="img-responsive" alt="">
+                    </picture>
+                     <h3 class="card__title"><strong>EMPLOYEE NAME </strong></h3>
+                     <p class="card__description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                     </p>
+                </li>
+                <li class="card__employee">
+                    <picture class="card__img">
+                        <img src="./images/team-2.jpg" class="img-responsive" alt="">
+                    </picture>
+                    <h3 class="card__title"><strong>EMPLOYEE NAME </strong></h3>
+                    <p class="card__description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                </li>
+                <li class="card__employee">
+                    <picture class="card__img">
+                        <img src="./images/team-3.jpg" class="img-responsive" alt="">
+                    </picture>
+                    <h3 class="card__title"><strong>EMPLOYEE NAME </strong></h3>
+                    <p class="card__description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                </li>
+                <li class="card__employee">
+                    <picture class="card__img">
+                        <img src="./images/team-4.jpg" class="img-responsive" alt="">
+                    </picture>
+                    <h3 class="card__title"><strong>EMPLOYEE NAME </strong></h3>
+                    <p class="card__description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="section__contact__us section--blue-bg">            
+            <h2 class="section__title">CONTACT US</h2>
+            <form action="/contact" class="form" id="contactForm" method="post">
+                <div class="form__group">
                     <label for="name"></label>
-                    <input type="text" placeholder="Name" value="">
+                    <input name="name" id="name" class="input__name" type="text" placeholder="Name" value="" required>
+                </div>
+                <div class="form__group">
                     <label for="email"></label>
-                    <input class="" type="text" placeholder="E-mail" value="">
+                    <input name="email" id="email" class="input__email" type="email" placeholder="E-mail" value="" required>
+                </div>
+                <div class="form__group">
                     <label for="object"></label>
-                    <input type="text" placeholder="Object" disabled="" value="" >
+                    <input id="object" name="object" maxlength="300" type="text" placeholder="Object" value="" required>
+                </div>
+                <div class="form__group">
                     <label class="label-textarea" for="textarea"></label>
-                    <textarea id="textarea" placeholder="Message" rows="8"></textarea>
-                </div>       
-        </div>
+                    <textarea id="textarea" name="textarea" class="textarea__message" placeholder="Message" rows="8" required></textarea>
+                </div>
+                
+                <button class="btn__submit btn secondary" type="submit">Envoyer</button>
+            </form>               
         </section>
     </main>
 
