@@ -1,0 +1,48 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    &__group {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    @include responsive(mobile)
+    {
+      padding: 0 20px;
+    }
+   
+    input,
+    textarea {
+      height: 38px;
+      line-height: 38px;
+      background: #fff;
+      border-radius: 4px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1em;
+      margin-top: 0.5rem;
+      text-indent: 8px;
+      outline: none;
+      border: 2px solid #fff;
+      color: #3b4349;
+      &:focus {
+        border-color: $color-text;
+      }
+    }
+
+     .textarea__message{
+      height: 150px;
+    }
+    
+    .btn {
+      min-width: 200px;
+      margin: 2rem auto;
+      background: $color-text;
+      color: #fff;
+      cursor: pointer;
+      &:hover {
+        background: darken($dark-blue, 5%);
+      }
+    }
+  }

@@ -14,7 +14,10 @@
     <!-- titre de la page qui s affiche dans l'onglet du navigateur -->
     <title>NIJI - Test intégrateur Senior</title>
 </head>
-<body class="body" id="home">
+<body id="home">
+
+    <a class="scroll__top"></i></a>
+
     <header class="header">
         <div class="header__navigation">
             <!-- suppression de la balise figure -->
@@ -27,28 +30,30 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
                     <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#team">Our team</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
                 </ul> 
+            </nav>
             <!-- </nav> -->
         </div>
         <div class="header__hero">
-            <h1 class="main__title">Welcome !</h2>
-            <a href="#" class="btn">Click here</a>
+            <h1 class="main__title">Welcome !</h1>
+            <a href="#main" class="btn">Click here</a>
         </div>
     </header>
   
-    <main role="main">
+    <main id="main">
         <section class="about section--blue-bg">
             <h2 class="about__title section__title">WHO WE ARE</h2>
             <p class="about__text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
             </p>
         </section>
         <article class="article">
             <div class="article__img">
                 <picture>
-                    <img src="images/article-1.jpg" alt="chaises en cuir et bois"/>
+                    <img src="images/article-1.jpg" alt="chaises en cuir et bois">
                 </picture>
             </div>
             <div class="article__content">                
@@ -65,11 +70,11 @@
         <article class="article article--right article--lightbluebg">            
             <div class="article__img">
                 <picture>
-                    <img src="images/article-2.jpg" alt="chaises en cuir et bois"/>
+                    <img src="images/article-2.jpg" alt="chaises en cuir et bois">
                 </picture>
             </div>
             <div class="article__content">                
-                <h4 class="article__title"> Article 2 - January 20</h4>
+                <h3 class="article__title"> Article 2 - January 20</h3>
                 <p class="article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                     when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -156,14 +161,14 @@
                 </div>
             </div>
         </section>
-        <section class="section__our__team section--light-bg">
+        <section id="team" class="section__our__team section--light-bg">
             <h2 class="section__title section__title--dark-blue">OUR TEAM</h2>
             <ul class="card__employees">
                 <li class="card__employee">
                      <picture class="card__img">
                         <img src="./images/team-1.jpg" class="img-responsive" alt="">
                     </picture>
-                     <h3 class="card__title"><strong>EMPLOYEE NAME </strong></h3>
+                     <h4 class="card__title"><strong>EMPLOYEE NAME </strong></h3>
                      <p class="card__description">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                      </p>
@@ -172,7 +177,7 @@
                     <picture class="card__img">
                         <img src="./images/team-2.jpg" class="img-responsive" alt="">
                     </picture>
-                    <h3 class="card__title"><strong>EMPLOYEE NAME </strong></h3>
+                    <h4 class="card__title"><strong>EMPLOYEE NAME </strong></h3>
                     <p class="card__description">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </p>
@@ -181,7 +186,7 @@
                     <picture class="card__img">
                         <img src="./images/team-3.jpg" class="img-responsive" alt="">
                     </picture>
-                    <h3 class="card__title"><strong>EMPLOYEE NAME </strong></h3>
+                    <h4 class="card__title"><strong>EMPLOYEE NAME </strong></h3>
                     <p class="card__description">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </p>
@@ -190,7 +195,7 @@
                     <picture class="card__img">
                         <img src="./images/team-4.jpg" class="img-responsive" alt="">
                     </picture>
-                    <h3 class="card__title"><strong>EMPLOYEE NAME </strong></h3>
+                    <h4 class="card__title"><strong>EMPLOYEE NAME </strong></h3>
                     <p class="card__description">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </p>
@@ -226,5 +231,8 @@
         <p>©2021 My Site</p>
     </footer>
     
+
+    <script src="./assets/scripts/script.js" defer></script>
+ 
 </body>
 </html>
