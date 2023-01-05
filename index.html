@@ -1,238 +1,155 @@
+
 <!DOCTYPE html>
-<!-- dir permet de definir le langage de la page. leftToRight pour le Français -->
-<html lang="fr" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page de test d'integration web. HTML5, CSS3">
-    
-    <!-- emplacement pour mettre les balises meta pour les RS og:title og:description etc -->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
 
-    <!-- Chargement de la feuille de style compilé depuis les fichiers scss -->
-    <link rel="stylesheet" media="all" href="styles/index.css">
-    <!-- titre de la page qui s affiche dans l'onglet du navigateur -->
-    <title>NIJI - Test intégrateur Senior</title>
-</head>
-<body id="home">
-
-    <a class="scroll__top"></i></a>
-
+<body class="body">
     <header class="header">
-        <div class="header__navigation">
-            <!-- suppression de la balise figure -->
-            <!-- manque l attribut href qui redirige vers la home -->
-            <a href="/" title="Mon site" class="header__logo">
-                <img src="images/logo.png" alt="" class="header__image">
-            </a>
-            <!-- restructuration du menu avec un ul > li*3 -->
+        <div class="header--banner">
+            <figure class="logo">
+                <a title="Mon site">
+                    <img src="images/logo.png" >
+                </a>
+            </figure>
             <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#team">Our team</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
-                </ul> 
+                <div class="nav-links">
+                    <a class="nav-link" href="#"><li>Home</li></a>
+                    <a class="nav-link" href="#"><li>About</li></a>
+                    <a class="nav-link" href="#"><li>Contact</li></a>
+                </div>
             </nav>
-            <!-- </nav> -->
         </div>
-        <div class="header__hero">
-            <h1 class="main__title">Welcome !</h1>
-            <a href="#main" class="btn">Click here</a>
+        <div class="header-group">
+            <h1 class="header-title">Welcome !</h2>
+            <a href="#" class="btn">Click here</a>
         </div>
     </header>
   
-    <main id="main">
-        <section class="about section--blue-bg">
-            <h2 class="about__title section__title">WHO WE ARE</h2>
-            <p class="about__text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-            </p>
-        </section>
-        <article class="article">
-            <div class="article__img">
-                <picture>
-                    <img src="images/article-1.jpg" alt="chaises en cuir et bois">
-                </picture>
+    <div class="content">
+        <div id="bloc">
+            <div class="bloc-inner">
+                <h2 class="bloc-title">WHO WE ARE</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
             </div>
-            <div class="article__content">                
-                <h3 class="article__title"> Article 1 - January 25</h3>
-                <p class="article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. 
-                </p>
-                <a href="#" class="btn">En savoir +</a>                
+        </div>
+        <div class="article">
+            <img src="images/article-1.jpg" width="100%" height="100%"/>
+            <div class="article-content">
+                <div>
+                    <h3 class="article-title"> Article 1 - January 25</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the leap into electronic typesetting, 
+                        remaining essentially unchanged. 
+                    </p>
+                    <span href="#" class="btn">En savoir +</span>
+                </div>
             </div>
-        </article>
-        <article class="article article--right article--lightbluebg">            
-            <div class="article__img">
-                <picture>
-                    <img src="images/article-2.jpg" alt="chaises en cuir et bois">
-                </picture>
+        </div>
+        <div class="article imgRight">
+            <div class="article-content">
+                <div>
+                    <h4 class="article-title"> Article 2 - January 20</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the leap into electronic typesetting, 
+                        remaining essentially unchanged.
+                    </p>
+                    <a href="#" class="btn">En savoir +</a>
+                </div>
             </div>
-            <div class="article__content">                
-                <h3 class="article__title"> Article 2 - January 20</h3>
-                <p class="article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged.
-                </p>
-                <a href="#" class="btn">En savoir +</a>                                
-            </div>
-        </article>
-        <section class="section__wwd section--dark-bg">            
-            <h2 class="section__title section__title--blue">WHAT WE DO</h2>
+            <img src="images/article-2.jpg" width="100%" height="100%"/>
+        </div>
+        <div id="bloc" class="is-dark">
+            <h2 class="bloc-title">WHAT WE DO</h2>
             <div class="table">
-                <div class="table-item">
+                <div class="table-item item">
                     <div class="flip-card">
                         <div class="flip-front">
-                            <p class="text__front">Element 1</p>
+                            <p>Element 1</p>
                         </div>
                         <div class="flip-back">
-                            <p>
-                                <strong>Lorem Ipsum is simply dummy text </strong>
-                            </p>
+                            <strong>Lorem Ipsum is simply dummy text </strong>
                         </div>
                     </div>
                 </div>
-                <div class="table-item">
+                <div class="table-item item">
                     <div class="flip-card">
                         <div class="flip-front">
-                            <p class="text__front">Element 2</p>
+                            <p>Element 2</p>
                         </div>
                         <div class="flip-back">
-                            <p>
-                                <strong>Lorem Ipsum is simply dummy text </strong>
-                            </p>
+                            <strong>Lorem Ipsum is simply dummy text </strong>
                         </div>
                     </div>
                 </div>
-                <div class="table-item">
+                <div class="table-item item">
                     <div class="flip-card">
                         <div class="flip-front">
-                            <p class="text__front">Element 3</p>
+                            <p>Element 3</p>
                         </div>
                         <div class="flip-back">
-                            <p>
-                                <strong>Lorem Ipsum is simply dummy text </strong>
-                            </p>
+                            <strong>Lorem Ipsum is simply dummy text </strong>
                         </div>
                     </div>
                 </div>
-                <div class="table-item">
+                <div class="table-item item">
                     <div class="flip-card">
                         <div class="flip-front">
-                            <p class="text__front">Element 4</p>
+                            <p>Element 4</p>
                         </div>
                         <div class="flip-back">
-                            <p>
-                                <strong>Lorem Ipsum is simply dummy text </strong>
-                            </p>
+                            <strong>Lorem Ipsum is simply dummy text </strong>
                         </div>
                     </div>
                 </div>
-                <div class="table-item">
+                <div class="table-item item">
                     <div class="flip-card">
                         <div class="flip-front">
-                            <p class="text__front">Element 5</p>
+                            <p>Element 5</p>
                         </div>
-                        <div class="flip-back">
-                            <p>
-                                <strong>Lorem Ipsum is simply dummy text </strong>
-                            </p>
+                        <div class="flip-bak">
+                            <strong>Lorem Ipsum is simply dummy text </strong>
                         </div>
                     </div>
                 </div>
-                <div class="table-item">
+                <div class="table-item item">
                     <div class="flip-card">
                         <div class="flip-front">
-                            <p class="text__front">Element 6</p>
+                            <p>Element 6</p>
                         </div>
                         <div class="flip-back">
-                            <p>
-                                <strong>Lorem Ipsum is simply dummy text </strong>
-                            </p>
+                            <strong>Lorem Ipsum is simply dummy text </strong>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="team" class="section__our__team section--light-bg">
-            <h2 class="section__title section__title--dark-blue">OUR TEAM</h2>
-            <ul class="card__employees">
-                <li class="card__employee">
-                     <picture class="card__img">
-                        <img src="./images/team-1.jpg" class="img-responsive" alt="">
-                    </picture>
-                     <h4 class="card__title"><strong>EMPLOYEE NAME </strong></h3>
-                     <p class="card__description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                     </p>
-                </li>
-                <li class="card__employee">
-                    <picture class="card__img">
-                        <img src="./images/team-2.jpg" class="img-responsive" alt="">
-                    </picture>
-                    <h4 class="card__title"><strong>EMPLOYEE NAME </strong></h3>
-                    <p class="card__description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </p>
-                </li>
-                <li class="card__employee">
-                    <picture class="card__img">
-                        <img src="./images/team-3.jpg" class="img-responsive" alt="">
-                    </picture>
-                    <h4 class="card__title"><strong>EMPLOYEE NAME </strong></h3>
-                    <p class="card__description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </p>
-                </li>
-                <li class="card__employee">
-                    <picture class="card__img">
-                        <img src="./images/team-4.jpg" class="img-responsive" alt="">
-                    </picture>
-                    <h4 class="card__title"><strong>EMPLOYEE NAME </strong></h3>
-                    <p class="card__description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </p>
-                </li>
-            </ul>
-        </section>
-        <section class="section__contact__us section--blue-bg">            
-            <h2 class="section__title">CONTACT US</h2>
-            <form action="/contact" class="form" id="contactForm" method="post">
-                <div class="form__group">
+        </div>
+
+        <div id="bloc">
+            <div class="bloc-inner">
+                <h1 class="bloc-title">CONTACT US</h1>
+                <div class="form">
                     <label for="name"></label>
-                    <input name="name" id="name" class="input__name" type="text" placeholder="Name" value="" required>
-                </div>
-                <div class="form__group">
+                    <input type="text" placeholder="Name" value="">
                     <label for="email"></label>
-                    <input name="email" id="email" class="input__email" type="email" placeholder="E-mail" value="" required>
-                </div>
-                <div class="form__group">
+                    <input class="" type="text" placeholder="E-mail" value="">
                     <label for="object"></label>
-                    <input id="object" name="object" maxlength="300" type="text" placeholder="Object" value="" required>
-                </div>
-                <div class="form__group">
+                    <input type="text" placeholder="Object" disabled="" value="" >
                     <label class="label-textarea" for="textarea"></label>
-                    <textarea id="textarea" name="textarea" class="textarea__message" placeholder="Message" rows="8" required></textarea>
-                </div>
-                
-                <button class="btn__submit btn secondary" type="submit">Envoyer</button>
-            </form>               
-        </section>
-    </main>
-
-    <footer class="footer">
+                    <textarea id="textarea" placeholder="Message" rows="8"></textarea>
+                </div>       
+        </div>
+    </div>
+    <div class="footer">
         <p>©2021 My Site</p>
-    </footer>
-    
-
-    <script src="./assets/scripts/script.js" defer></script>
- 
+    </div>
 </body>
+
 </html>
